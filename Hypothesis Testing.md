@@ -49,17 +49,18 @@ alpha <- 0.05
 Step 3: Test statistic
 
 ```
-z <- (xbar - u0) / (sd/sqrt(n));z
+z <- (xbar - u0) / (sd/sqrt(n))
 ```
 
 Step 4: Finding P-value approach or Critical Value approach
 
 ```
 # P-value approach
-pvalue <- pnorm(z); pvalue
-
+pvalue <- pnorm(z)
+```
+```
 # Critical Value approach
-zalpha <- qnorm(alpha);zalpha
+zalpha <- qnorm(alpha)
 ```
 
 Step 5: Compare
