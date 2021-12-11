@@ -57,7 +57,7 @@ Result
 ```
 
 ### Step 4: Finding P-value approach or Critical Value approach
-# P-value approach
+#### P-value approach
 
 ```
 pvalue <- pnorm(z)
@@ -66,7 +66,7 @@ Result
 ```
 0.003830381
 ```
-# Critical Value approach
+#### Critical Value approach
 ```
 zalpha <- qnorm(alpha)
 ```
