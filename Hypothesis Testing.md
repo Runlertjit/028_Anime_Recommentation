@@ -23,26 +23,31 @@
 
 The Federal Trade Commission (FTC) periodically conducts statistical studies designed to test the claims that manufacturers make about their products. For example, the label on a large can of Hilltop Coffee states that the can contains 3 pounds of coffee. Thus, the FTC interprets the label information on a large can of coffee as a claim by Hilltop that the population mean filling weight is at least 3 pounds per can. The director of the FTC’s testing program willing to risk a 1% chance of making such an error. Suppose a sample of 36 cans of coffee is selected and the population standard deviation can be assumed known with a value of σ = 0.18. Is x̄ = 2.92 pounds small enough to cause us to reject H0 ?
 
+
 Step 0: Assign variables
 
 ```
-n <-
-sd <-
-xbar <-
-u0 <-
-```
+n <- anime %>% count()
+n
+sd <- sd(anime$members)
+sd
+xbar <- mean(anime$members)
+xbar
+u0 <-  100000
+  ```
 
 Step 1: State the hypothesis
 
 ```
-#h0:   ,ha:
+#Ho: μ > 100000  
+#Ha: μ < 100000
 ```
 
 Step 2: Level of significance
 
 ```
-alpha <-
-```
+alpha <- 0.05
+  ```
 
 Step 3: Test statistic
 
@@ -77,6 +82,7 @@ if(z<=zalpha){
   print("Accept H0")
 }
 ```
+
 
 Step 6: Conclusion
 
