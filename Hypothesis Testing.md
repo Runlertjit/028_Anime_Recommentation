@@ -95,7 +95,7 @@ if(z<=zalpha){
 Result
 ```
 P-value approach : "Reject H0"
-Critical approach : "Reject H0"
+Critical value approach : "Reject H0"
 ```
 
 
