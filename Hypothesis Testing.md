@@ -36,7 +36,7 @@ u0 <-  100000
 ### Step 1: State the hypothesis
 
 ```
-Ho: μ > 100000  
+Ho: μ ≥ 100000  
 Ha: μ < 100000
 ```
 
