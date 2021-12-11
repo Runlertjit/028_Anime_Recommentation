@@ -28,26 +28,23 @@ Step 0: Assign variables
 
 ```
 n <- anime %>% count()
-n
 sd <- sd(anime$members)
-sd
 xbar <- mean(anime$members)
-xbar
 u0 <-  100000
   ```
 
 Step 1: State the hypothesis
 
 ```
-#Ho: μ > 100000  
-#Ha: μ < 100000
+Ho: μ > 100000  
+Ha: μ < 100000
 ```
 
 Step 2: Level of significance
 
 ```
 alpha <- 0.05
-  ```
+```
 
 Step 3: Test statistic
 
