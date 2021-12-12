@@ -20,24 +20,23 @@
 6. Conclusion
 
 ### Example 1 (Ref: Chapter 9 Page 356)
-
-The Federal Trade Commission (FTC) periodically conducts statistical studies designed to test the claims that manufacturers make about their products. For example, the label on a large can of Hilltop Coffee states that the can contains 3 pounds of coffee. Thus, the FTC interprets the label information on a large can of coffee as a claim by Hilltop that the population mean filling weight is at least 3 pounds per can. The director of the FTC’s testing program willing to risk a 1% chance of making such an error. Suppose a sample of 36 cans of coffee is selected and the population standard deviation can be assumed known with a value of σ = 0.18. Is x̄ = 2.92 pounds small enough to cause us to reject H0 ?
+จากข้อมูลที่ได้มามี Anime จำนวนทั้งหมด 11,830 โดยทางกลุ่มสนใจ Anime ที่เป็นประเภท ONA ซึ่งมีจำนวนทั้งหมด 606 เรื่องจากทั้งหมด และได้ตั้งสมมุติฐานว่าคะแนนความนิยมของ Anime แต่ละเรื่องจะมีคะแนนที่มากกว่า 5.50 คะแนน โดยที่มีค่าเฉลี่ยของคะแนนอยู่ที่ 5.64 คะแนน และมีส่วนเบี่ยงเบนมาตรฐานอยู่ที่ 1.12
 
 
 ### Step 0: Assign variables
 
 ```
-n <- anime %>% count()
-sd <- sd(anime$members)
-xbar <- mean(anime$members)
-u0 <-  100000
+n <- 606
+sd <- 1.12
+xbar <- 5.64
+u0 <-  5.5
   ```
 
 ### Step 1: State the hypothesis
 
 ```
-Ho: μ ≥ 100000  
-Ha: μ < 100000
+Ho: μ ≥ 5.5 
+Ha: μ < 5.5
 ```
 
 ### Step 2: Level of significance
@@ -53,7 +52,7 @@ z <- (xbar - u0) / (sd/sqrt(n))
 ```
 Result
 ```
--160.0684
+3.072595
 ```
 
 ### Step 4: Finding P-value approach or Critical Value approach
@@ -64,7 +63,7 @@ pvalue <- pnorm(z)
 ```
 Result
 ```
-0.003830381
+0.998939
 ```
 #### Critical Value approach
 ```
@@ -94,8 +93,8 @@ if(z<=zalpha){
 ```
 Result
 ```
-P-value approach : "Reject H0"
-Critical value approach : "Reject H0"
+P-value approach : "Accept H0"
+Critical value approach : "Accept H0"
 ```
 
 
