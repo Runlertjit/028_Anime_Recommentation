@@ -52,7 +52,7 @@ z <- (xbar - u0) / (sd/sqrt(n))
 ```
 Result
 ```
-3.072595
+-1.301828
 ```
 
 ### Step 4: Finding P-value approach or Critical Value approach
@@ -63,7 +63,7 @@ pvalue <- pnorm(z)
 ```
 Result
 ```
-0.998939
+0.09648
 ```
 #### Critical Value approach
 ```
